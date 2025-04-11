@@ -1,21 +1,23 @@
-# Nome do Projeto
-> Um nome provisório que resuma bem a ideia. Seja criativo, mas claro!
+# Clarity
 
 ## 👨‍🎓 Integrantes
-- Nome do Estudante 1
-- Nome do Estudante 2
-- ...
+- Fabrício Moreno da Silva
+- Liedson Augusto Maciel Costa
+- Ynnayron Juan Lopes da Silva
 
 ## 💡 Ideia Principal
-Descreva em poucas linhas o que o projeto propõe fazer. 
-Pense como se estivesse explicando para alguém fora da área de tecnologia.
+desenvolver um sistema que analisa pipelines de dados existentes e gera automaticamente documentação técnica e de negócios
 
 ## 🎯 Objetivos
-- Liste de forma clara o que o sistema pretende resolver ou melhorar.
-- Pode usar bullets ou parágrafos curtos.
+- O objetivo é resolver o problema comum de documentação desatualizada ou incompleta.
+- Identificar automaticamente padrões e transformações em pipelines de dados.
+- Mapear fluxos de dados de ponta a ponta com suas transformações.
+- Inferir a lógica de negócio subjacente às transformações técnicas.
+- Produzir descrições técnicas precisas de componentes do pipeline
+- Gerar explicações em linguagem natural das transformações
 
 ## 👥 Público-Alvo
-Quem se beneficia com esse projeto? Um setor específico? Um tipo de usuário?
+Programadores, Engenheiro de dados e Stackeholders
 
 ## 🤖 Agentes Envolvidos
 Liste os agentes que existirão no sistema e suas funções.
@@ -25,7 +27,7 @@ Exemplo:
 - Agente C: executa ações no ambiente
 
 ## 🧱 Tecnologias Pretendidas
-- Linguagem de programação
+- python, react, nest
 - Bibliotecas e frameworks
 - Ferramentas para teste, simulação, visualização, etc.
 
@@ -33,10 +35,10 @@ Exemplo:
 
 ## 📦 Entradas e Saídas Esperadas
 **Entradas:**
-- Quais dados o sistema recebe?
+- schemas de banco, script de pipelines
 
 **Saídas:**
-- Quais ações ou informações ele gera?
+- documentações padronizadas, completas e atualizadas
 
 ## 🔁 Interação entre os Agentes
 Descreva como os agentes vão se comunicar ou se coordenar.
