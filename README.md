@@ -26,11 +26,8 @@ Exemplo:
 - Agente Gerador de Documentação: gera a documentação específica para o pipeline analisado 
 
 ## 🧱 Tecnologias Pretendidas
-- `Python`, `React`, `Nest`
-- Bibliotecas e Frameworks
-- Ferramentas para teste, simulação, visualização, etc.
-
-> Justifique, sempre que possível, **por que escolheu cada ferramenta**.
+- `Python` 
+- _ainda analisando o restante das tecnologias que serão utilizadas_
 
 ## 📦 Entradas e Saídas Esperadas
 **Entradas:**
