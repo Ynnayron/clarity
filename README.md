@@ -6,7 +6,7 @@
 - Ynnayron Juan Lopes da Silva
 
 ## 💡 Ideia Principal
-desenvolver um sistema que analisa pipelines de dados existentes e gera automaticamente documentação técnica e de negócios
+Desenvolver um sistema que analisa pipelines de dados existentes e gera automaticamente documentação técnica e de negócios
 
 ## 🎯 Objetivos
 - O objetivo é resolver o problema comum de documentação desatualizada ou incompleta.
@@ -22,27 +22,28 @@ Programadores, Engenheiro de dados e Stackeholders
 ## 🤖 Agentes Envolvidos
 Liste os agentes que existirão no sistema e suas funções.
 Exemplo:
-- Agente A: coleta dados
-- Agente B: toma decisões
-- Agente C: executa ações no ambiente
+- Agente Analisador de Código: analisa o pipeline desejado
+- Agente Gerador de Documentação: gera a documentação específica para o pipeline analisado 
 
 ## 🧱 Tecnologias Pretendidas
-- python, react, nest
-- Bibliotecas e frameworks
+- `Python`, `React`, `Nest`
+- Bibliotecas e Frameworks
 - Ferramentas para teste, simulação, visualização, etc.
 
 > Justifique, sempre que possível, **por que escolheu cada ferramenta**.
 
 ## 📦 Entradas e Saídas Esperadas
 **Entradas:**
-- schemas de banco, script de pipelines
+- Schemas de banco, script de pipelines
 
 **Saídas:**
-- documentações padronizadas, completas e atualizadas
+- Documentações padronizadas, completas e atualizadas
 
 ## 🔁 Interação entre os Agentes
-Descreva como os agentes vão se comunicar ou se coordenar.
-Pode ser uma descrição textual ou um fluxograma em breve.
+1. O usuário chama o Agente Analisador de Código
+2. O código é analisado e seus dados principais são enviados para o Agente Gerador de Documentação
+3. O Agente Gerador de Documentação gera a documentação a partir dos dados recebidos
+4. O usuário recebe um arquivo com a documentação do seu pipeline
 
 ## 🗂️ Organização e Planejamento do Projeto
 O progresso deste projeto será monitorado através do **GitHub Projects**.
@@ -56,7 +57,7 @@ Cada integrante deve ser responsável por pelo menos uma tarefa no quadro.
 Use etiquetas (labels) e comentários para detalhar o andamento e as decisões.
 
 ## 📌 Status Inicial do Projeto
-- [ ] Ideia discutida e validada com o professor
+- [x] Ideia discutida e validada com o professor
 - [ ] Estrutura básica do repositório criada
 - [ ] Quadro no GitHub Projects criado
 - [ ] Primeiras tarefas definidas e atribuídas
