@@ -7,48 +7,44 @@
 ## 🧠 1. Visão Geral do Projeto
 
 - **Título do Projeto**:  
-  Agente RAG para Análise de Documentos Jurídicos
-
+Clarity agente de documentação de software
 - **Integrantes da Equipe**:  
-  - Marcos (arquitetura e integração)
-  - Sofia (parsing e chunking)
-  - Letícia (LLM e interface)
+  - Fabricio Moreno (interface e integração)
+  - Ynnayron Juan (LLM e arquitetura)
 
 - **Resumo em uma frase**:  
-  Um agente que responde perguntas jurídicas a partir de documentos legais internos usando RAG.
+  Um agente que documenta qualquer projeto de software.
 
 ---
 
 ## ⚙️ 2. Arquitetura Atual
 
 - **Quantos agentes existem no sistema atualmente?**  
-  Apenas 1 agente: `AgenteConsultorLegal`.
+  Apenas 1 agente: `AgenteGeradorDocumentação`.
 
 - **Função principal de cada agente:**  
-  Receber perguntas e buscar trechos relevantes em uma base vetorial para gerar uma resposta fundamentada.
+  Receber acesso a todo projeto de via vscode e gera um readme e gera um diagrama de classes.
 
 - **Eles interagem entre si? Como?**  
-  Ainda não. A ideia futura é criar um agente de parsing separado e outro de curadoria de resposta.
+  Ainda não. A ideia final é dividir as tarefas em dois agentes um de leitura e interpretação do projeto e outro para gerar os diagramas.
 
 - **Já existe algum ambiente de simulação/teste?**  
-  Sim. Interface básica no Gradio para simular perguntas e ver a resposta do sistema.
+  Não.
 
 ---
 
 ## ✅ 3. Avanços Concretos
 
-- Parser funcional para documentos `.docx` (com alguma limitação em tabelas).
-- Chunking básico com `RecursiveCharacterTextSplitter` da LangChain.
-- Criação inicial da base vetorial com `ChromaDB` e embeddings do modelo `e5-small`.
+- Desenvolvimento da extensão do sistema para vscode.
+- LLM com acesso ao projeto.
 
 ---
 
 ## 🧱 4. Dificuldades Enfrentadas
 
-- As respostas geradas pelo agente ainda são muito genéricas ou irrelevantes.
-- Embeddings parecem fracos — o sistema não está encontrando os trechos certos.
-- Chunking inicial quebrou cláusulas no meio, perdendo contexto.
-- Dúvida se estamos incluindo metadados corretamente no `ChromaDB`.
+- A LLM alucina em algumas partes do readme e da geração do diagrama
+- Adicionar mais features ao projeto
+- Integrar o sistema a uma extensão no vscode
 
 ---
 
@@ -62,15 +58,15 @@
 
 ## 🎯 6. Próximos Passos
 
-- Reestruturar os documentos com um parser mais robusto que preserve cláusulas inteiras.
-- Criar uma função de avaliação da resposta baseada em "overlap" com o trecho encontrado.
-- Testar uma alternativa de reranking dos trechos antes de enviar à LLM.
+- Testar om sistema com outros projetos.
+- Realizar fine tuning.
+- integrar um novo agente para a geração dos diagramas.
 
 ---
 
 ## 📢 7. Pedido de Ajuda
 
-- Precisamos de ajuda para definir uma boa estratégia de chunking em documentos jurídicos.
-- Também gostaríamos de saber se vale a pena testar outros modelos de embedding (e quais seriam gratuitos e compatíveis).
+- Precisamos de ajuda para realizar um fine tuning do modelo.
+- Também gostaríamos de ouvir sugestões de novas features.
 
 ---
